@@ -61,11 +61,12 @@ body {
 .board .game {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   gap: 10px;
 }
-
 .turn {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 15px auto;
   width: fit-content;
@@ -75,8 +76,11 @@ body {
 
 .turn .square,
 .winner .square {
-  width: 70px;
-  height: 70px;
+  align-items: center;
+  justify-content: center;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
   pointer-events: none;
   border-color: transparent;
 }
@@ -85,6 +89,8 @@ body {
   color: #fff;
   background: #09f;
 }
+
+
 
 .winner {
   position: absolute;
